@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@300;400;500&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans", "Roboto", Arial, Helvetica, sans-serif;
+}
+/* Fonts going to use */
+headfont {
+  font-family: "Montserrat", "Lato", "Open Sans", "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+bodyfont {
+  font-family: "Noto Sans", "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Fonts over */
+
+/* navbar css */
+#top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 5;
+}
+#navimg {
+  height: 50px;
+  width: 50px;
+  border-radius: 30%;
+}
+/* navbar buttons */
+#wkbtn {
+  background-color: red;
+  background-image: linear-gradient(to right, red, purple);
+  border-image-slice: 1;
+}
+
+#wkbtn:hover {
+  background-image: linear-gradient(to right, red, purple);
+  opacity: 0.8;
+}
+
+#hmbtn:hover,
+#abtbtn:hover {
+  border-image: linear-gradient(to right, red, purple);
+  border-image-slice: 1;
+}
+/* navbar buttons over */
+/* navbar css over */
+
+/* topic Heading css */
+h2[class="topichead"] {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Montserrat", "Lato", "Open Sans", "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+/* topic Heading css */
+
+/* sub heading css */
+.subhead {
+  font-size: 24px;
+  color: rgb(188, 28, 28);
+}
+.subhead::after {
+  display: block;
+  content: "";
+  border: 3px solid rgb(188, 28, 28);
+  border-radius: 20px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+/* sub heading css over */
+/* sub heading's sub heading css */
+span[class="subheadsub"] {
+  color: rgb(65, 68, 70);
+}
+/* sub heading's sub heading css over */
+/* list items body text css */
+.listtxt {
+  color: rgb(113, 115, 117);
+  font-family: "Roboto", "Noto Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+/* list items body text css over */
+
+/* Image Caption text css */
+span[class="imgcaption"] {
+  display: block;
+  text-align: center;
+  font-family: cursive;
+  color: rgb(113, 115, 117);
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+/* Image Caption text css over */
+
+/* body text css */
+.bodytxt {
+  color: rgb(113, 115, 117);
+  font-family: "Noto Sans", "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+/* body text css over */
+
+/* project overview css */
+div[class="container posection"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+/* project overview css over */
+
+/* All persona Image css */
+div[class="personaimg"],
+div[class="problemimg"],
+div[class="storyimg"] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 10px;
+}
+/* All persona Image css over */
+
+/* Persona image css */
+img.perimg {
+  width: 40vw;
+  height: 50vh;
+  margin: 10px;
+  box-shadow: 0px 0px 6px #000;
+  z-index: 2;
+}
+/* Persona image css over */
+
+/* Problem statement css */
+ol[class="list-group list-group-numbered"] {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/* Problem statement css over */
+
+/* Competitive audit css */
+img.caimg {
+  width: 60vw;
+  height: 45vh;
+  margin: 10px;
+  /* border: 1px solid #000; */
+  box-shadow: 0px 0px 6px #000;
+  z-index: 2;
+}
+div.competitiveimg {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+div.audit1 {
+  align-self: flex-start;
+}
+div.audit3 {
+  align-self: flex-end;
+}
+/* Competitive audit css over */
+
+/* Switch buttons css */
+.content {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 8px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: white;
+  border-top: 3px solid rgb(188, 28, 28);
+  border-radius: 10px;
+}
+
+.button:not(.active-button):hover {
+  color: white;
+  background-color: rgb(188, 28, 28);
+}
+
+.active-button {
+  border-top: none;
+  border-bottom: 3px solid rgb(188, 28, 28);
+  box-shadow: 0px 0px 15px rgb(255, 0, 0);
+}
+/* Switch buttons css over */
+
+/* Wireframes Image css */
+div[class="wireframeimg"] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+img.wireimg {
+  width: 25vw;
+  height: 50vh;
+  margin: 10px;
+  box-shadow: 0px 0px 6px #000;
+  z-index: 2;
+}
+img.wireimgapp {
+  width: 20vw;
+  height: 80vh;
+  margin: 10px;
+  box-shadow: 0px 0px 6px #000;
+  z-index: 2;
+}
+/* Wireframes Image css over */
+
+/* Lofi css */
+div[class="lofi"] {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.lofiimg {
+  width: 40vw;
+  height: 50vh;
+  box-shadow: 0px 0px 10px #000;
+}
+.lofivdoapp {
+  width: 15vw;
+  height: 50vh;
+  box-shadow: 0px 0px 10px #000;
+}
+.lofivdoweb {
+  width: 40vw;
+  height: 50vh;
+  box-shadow: 0px 0px 10px #000;
+}
+/* video {
+  width: 100%;
+  height: auto;
+} */
+button[class="btn btn-success"] {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px #0f0;
+}
+.lofitxt {
+  display: inline;
+  margin-right: 10px;
+}
+.lofilink {
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* Lofi css over */
+
+/* Mockups css */
+img[class="img-fluid mockupsimgapp"] {
+  width: 20vw;
+  height: 80vh;
+  margin: 8px;
+  border: none;
+  box-shadow: 0px 0px 6px #f00;
+  z-index: 2;
+}
+img[class="img-fluid mockupsimgweb"] {
+  width: 26vw;
+  height: 75vh;
+  margin: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px #f00;
+  z-index: 2;
+}
+/* Mockups css over */
+
+/* High-Fidelity prototype css */
+.btn1 {
+  box-shadow: 0px 0px 10px #f00;
+}
+/* High-Fidelity prototype css over */
+
+/* connect css */
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  column-gap: 30px;
+}
+a.icon {
+  padding: 20px;
+  width: 5vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+}
+a.icon:hover {
+  box-shadow: 0px 0px 10px #f00;
+}
+.bi-linkedin,
+.bi-instagram,
+.bi-envelope-paper-fill {
+  font-size: 2.5rem;
+  border-radius: 50px;
+  color: #f00;
+}
+/* connect css over */
+
+/* image zoom in and out feature css */
+.image-container {
+  cursor: zoom-in;
+}
+.zoomed-in {
+  position: fixed;
+  top: 28.5vh;
+  left: 30vw;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px #f00 !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.zoomed-in img {
+  max-width: 90%;
+  max-height: 90%;
+}
+/* image zoom in and out feature css over */
+
+/* footer css */
+footer {
+  background-color: lightgray;
+  height: 7vh;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+/* footer css over */
+
+/* media query css */
+@media (max-width: 768px) {
+  /* topic Heading css */
+  h2[class="topichead"] {
+    font-size: 28px;
+  }
+  /* topic Heading css over */
+  /* sub heading css */
+  .subhead {
+    font-size: 22px;
+  }
+  .subhead::after {
+    border: 2px solid rgb(188, 28, 28);
+  }
+  /* sub heading css over */
+  /* sub heading's sub heading css */
+  span[class="subheadsub"] {
+    font-weight: 600 !important;
+  }
+  /* sub heading's sub heading css */
+  /* list items body text css */
+  .listtxt {
+    font-size: 14px;
+  }
+  span[class="fw-bold"],
+  div[class="fw-bold"] {
+    font-size: 14px;
+  }
+  /* list items body text css over */
+  /* Image Caption text css */
+  span[class="imgcaption"] {
+    font-size: 12px;
+  }
+  /* Image Caption text css over */
+  /* body text css */
+  .bodytxt {
+    font-size: 16px;
+  }
+  /* body text css over */
+  /* heroimg css */
+  .heroimg {
+    margin-top: 70px;
+  }
+  /* heroimg css over */
+  /* project overview css */
+  div[class="container posection"] {
+    flex-flow: row wrap !important;
+  }
+  /* project overview css over */
+  /* Persona image css */
+  img.perimg {
+    width: 90vw;
+    height: 40vh;
+  }
+  /* Persona image css over */
+  /* Competitive audit css */
+  img[class="img-fluid caimg"] {
+    width: 90vw;
+    height: auto;
+  }
+  /* Competitive audit css over */
+  /* wireframes buttons css */
+  .button {
+    padding: 10px 6.4px;
+    font-size: 18px;
+  }
+  /* wireframes buttons css over */
+  /* wireframes image css */
+  img.wireimg {
+    width: 40vw;
+  }
+  img.wireimgapp {
+    width: 42vw;
+  }
+  /* wireframes image css over */
+  /* lofi css */
+  .lofiimg {
+    width: 90vw;
+    height: auto;
+  }
+  .lofivdoapp {
+    width: 75vw;
+    height: 60vh;
+  }
+  .lofivdoweb {
+    width: 90vw;
+    height: 50vh;
+  }
+  .lofilink {
+    font-size: 16px;
+  }
+  /* lofi css over */
+  /* Mockups css */
+  img[class="img-fluid mockupsimgapp"] {
+    width: 42vw;
+    height: 80vh;
+  }
+  img[class="img-fluid mockupsimgweb"] {
+    width: 90vw;
+    height: auto;
+  }
+  /* Mockups css over */
+  /* High-Fidelity prototype css */
+  .btn1 {
+    font-size: 16px;
+    margin: 10px auto;
+  }
+  /* High-Fidelity prototype css over */
+  /* connect icon css */
+  a.icon {
+    padding: 10px;
+    width: 15vw;
+    height: 9vh;
+    border-radius: 25px;
+  }
+  .bi-linkedin,
+  .bi-instagram,
+  .bi-envelope-paper-fill {
+    font-size: 2rem;
+  }
+  /* connect icon css over */
+}
+/* media query css over */
